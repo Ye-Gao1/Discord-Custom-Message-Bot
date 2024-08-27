@@ -24,7 +24,7 @@ client.once("ready", () => {
     try {
       const response = await axios.get("http://numbersapi.com/random/trivia");
       const fact = response.data;
-      const channel = client.channels.cache.get("1244006956222644288");
+      const channel = client.channels.cache.get("1275201082024263740");
       if (channel) {
         channel.send(`🌟 Daily Fun Fact: ${fact}`);
       }
